@@ -1,0 +1,102 @@
+main {
+  color: white;
+  padding: 200px 20px 200px 20px;
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.main-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://perrinwear.com/shop/wp-content/uploads/2021/05/IMG_6019.00_00_33_09.Still001.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.nav-wrapper {
+  background-color: rgb(4, 49, 87);
+}
+
+nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mobile-nav {
+  padding: 20px;
+}
+
+.perrin-logo {
+  height: 30px;
+}
+
+.desktop-nav-right {
+  display: none;
+}
+
+.history-text {
+  text-transform: uppercase;
+  padding: 40px 20px;
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(4, 49, 87);
+  font-weight: bold;
+}
+
+.story-span {
+  color: rgb(12, 121, 137);
+}
+
+main > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-shadow: 0px 0px 15px #000000;
+}
+main > div > div:nth-child(1) {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  main > div > div:nth-child(1) {
+    font-size: 3rem;
+  }
+  .burger-menu {
+    display: none;
+  }
+
+  main {
+    padding: 220px 20px 220px 20px;
+  }
+
+  .desktop-nav-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .apply-now-btn {
+    background-color: rgb(12, 121, 137);
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .perrin-logo {
+    height: 40px;
+  }
+
+  .history-text {
+    font-size: 3.5rem;
+    padding: 60px 20px;
+  }
+}
